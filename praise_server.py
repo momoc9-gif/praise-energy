@@ -16,15 +16,16 @@ html_form = """
 <html>
 <head>
     <title>마음에너지 충전봇</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body style='text-align: center; margin-top: 100px;'>
     <h1>나한테 말 걸어봐!</h1>
-    <form action='/energy' method='post'>
-        <input type='text' name='message' placeholder='예: 나 오늘 힘들었어' style='width: 300px; height: 30px;'><br><br>
-        <input type='submit' value='에너지 충전!' style='width: 150px; height: 40px;'>
+    <form action="/energy" method="post">
+        <input type="text" name="message" placeholder="예: 나 오늘 힘들었어" style='width: 80%; height: 40px; font-size: 18px;'><br><br>
+        <input type="submit" value="에너지 충전!" style='width: 60%; height: 50px; font-size: 20px;'>
     </form>
     <br><br>
-    <h3>현재 코인: {{ coin }} 개</h3>
+    <h3 style="font-size: 18px;">현재 코인: {{ coin }} 개</h3>
 </body>
 </html>
 """
